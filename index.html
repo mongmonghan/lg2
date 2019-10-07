@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	
+	body{margin: 0;padding: 0}
+	section{position: relative;}
+	h1{position: absolute;top: 1000px;left: 430px;font-size: 3.3em;}
+	#aa{height: 1100px;}
+	#a{height: 700px;margin-top: 150px;margin-bottom: 100px}
+	#b{height: 700px;margin-top: 150px;margin-bottom: 100px}
+	#c{height: 700px;margin-top: 150px;margin-bottom: 100px}
+	#d{height: 700px;margin-top: 150px;margin-bottom: 100px}
+	#e{height: 700px;margin-top: 150px;margin-bottom: 100px}
+	#g{height: 700px;margin-top: 150px;margin-bottom: 100px}
+	#h{height: 700px;margin-top: 150px;margin-bottom: 100px}
+		@keyframes f{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+		@keyframes ltor{
+			from{left:0px;}
+			to{left:200px;}
+		}
+		@keyframes rtol{
+			from{left:900px;}
+			to{left:750px;}
+		}
+		@keyframes bt{
+			from{top:400px; opacity: 0;}
+			to{top:230px; opacity: 1;}
+		}
+		img{position: relative;}
+		#back{top: 0;left: 0;width: 1510px;opacity: 0}
+		#back2{width: 1510px;opacity: 0}
+		#img1{left: 850px;top:250px;width: 550px}
+		#img2{left: 200px;top:250px;}
+		#img3{left: 800px;top:230px;}
+		#img4{left: 200px;top:300px;}
+		#img5{left: 800px;top:200px;width: 550px}
+		#monitor{position: fixed;background: black;
+		padding: 5px; height: 20px; color: white; width: 70px; top: 0; right: 0;}
+		#d{background: url(grass.jpg);background-size: cover;background-attachment: fixed;}
+		#t1{left: 200px;}
+		#t2{right: 200px;}
+		#t3{left: 200px; color: white;}
+		#t4{right: 200px;}
+		#t5{left: 200px;}
+		.text{width: 410px; line-height: 1.5; font-size: 1.5em; position: absolute;}
+	</style>
+
+</head>
+
+<body>
+	<section  id="aa">
+	<img src="lg.jpg" style="width: 1520px;" id="back">
+	<h1 id="h1">
+	LG PuriCare을 소개합니다.</h1>
+	</section>
+
+	<section  id="a">
+		 <img src="0-1.jpg" style="width: 1520px;" id="back2">
+	</section>
+
+	<section id="b">
+	<img src="1.jpg"  id="img1">
+	<div id="t1" class="text">
+	<h2>강력한 청정</h2>
+	<br>
+	NASA에서 개발한 항공기 팬 기술이 적용되어 
+	더 넓어진 청정 면적으로 360˚ 모든 방향에서 먼지를 흡입하고 
+	초미세먼지까지 제거하여 어디에 두어도 
+	빈틈없이 청정바람을 보내줍니다.
+	</div>
+	</section>
+
+	<section id="c">
+	<img src="2.png"  id="img2">
+	<div id="t2"  class="text">
+	<h2>토탈 알러지/집진 플러스 필터</h2>
+	<br>
+	토탈 알러지/집진 플러스 필터 
+	토탈 알러지 집진/플러스 필터를 적용하여, 
+	0.01㎛의 극초미세먼지까지 99.99% 이상 제거합니다.
+	</div>
+	</section>
+
+	<section id="d">
+	<img src="3.png" id="img3">
+	<div id="t3" class="text">
+	<h2><span style="background-color: #368128">토탈 유해가스 필터</span></h2>
+	<br><span style="background-color: #368128">스모그 원인물질(SO2, NO2), 새집증후군 물질 
+	(톨루엔, 포름알데히드), 생활냄새까지 잡아줍니다.</span>
+	</div>
+	</section>
+
+	<section id="e">
+	<img src="4.png" id="img4">
+	<div id="t4" class="text">
+	<h2>공기청정 디스플레이</h2>
+	<br>
+	미세먼지, 초미세먼지, 극초미세먼지 농도를 
+	상세하게 확인할 수 있고, 냄새, 먼지를 종합한 
+	종합청정도를 4단계로 보여줍니다.
+	</div>
+	</section>
+
+	<section id="g">
+	<img src="5.jpg" id="img5">
+	<div id="t5" class="text">
+	<h2>아기케어</h2>
+	<br>
+	아기의 생활 공간에 맞춰 
+	하단으로 공기를 집중하여 안심청정존을 형성합니다.
+	</div>
+	</section>
+
+	<section id="h">
+		<a href="https://www.lge.co.kr/lgekor/product/aircare/air-cleaner/productDetail.do?cateId=6240&prdId=EPRD.331202&utm_campaign=201805-Puricare_aircleaner&utm_medium=BrandSearch&utm_source=Naver&utm_content=maincopy_0118#featureBtnsWrap">
+		<img src="6.JPG" style="width: 1520px;" alt="lg" id="final">
+		</a>
+	</section>
+
+	<div id="monitor"></div>
+	<script type="text/javascript">
+		window.onscroll = function () {
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+
+		if (10 < t){
+		back.style.animation="f 2s forwards";}
+		else{back.style.animation = "";}
+
+		if (700 < t){
+		back2.style.animation="f 2s forwards";}
+		else{back2.style.animation = "";}
+
+		if (400 < t){
+		h1.style.animation="f 2s forwards";}
+		else{h1.style.animation = "";}
+
+		if (1600 < t) {
+		t1.style.animation = "bt 2s forwards";} 
+		else {t1.style.animation = "";}
+		if (1600 < t) {img1.style.animation = "rtol 2s forwards";}
+		else {img1.style.animation = "";}
+		
+		if (2400<t) {t2.style.animation = "bt 2s forwards";}
+		else{t2.style.animation = "";}
+		if (2400<t) {img2.style.animation = "ltor 2s forwards";}
+		else{img2.style.animation = "";}
+
+		if (t>3000) {t3.style.animation = "bt 2s forwards";}
+		else{t3.style.animation = "";}
+		if (t>3000) {img3.style.animation = "rtol 2s forwards";}
+		else{img3.style.animation = "";}
+
+		if (t>4200) {t4.style.animation = "bt 2s forwards";}
+		else{t4.style.animation = "";}
+		if (t>4200) {img4.style.animation = "ltor 2s forwards";}
+		else{img4.style.animation = "";}
+
+		if (t>5000) {t5.style.animation = "bt 2s forwards";}
+		else{t5.style.animation = "";}
+		if (t>5000) {img5.style.animation = "rtol 2s forwards";}
+		else{img5.style.animation = "";}
+
+		if (5800<t){
+		final.style.animation="f 2s forwards";}
+		else{final.style.animation = "";}
+	}
+	</script>
+</body> 
+</html>
